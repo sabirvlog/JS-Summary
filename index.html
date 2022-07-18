@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS- JavaScript Summary Tutorial #02</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>We will practice about JavaScript Strings and Numbers in this tutorial</h1>
+	<p>Lets welcome to everyone who is here for visiting my source
+	you will be satisfied from me and enjoy it well.</p>
+
+	<!-- Main section starts from here -->
+	<div id="practice1">Let's print here</div>
+	<div id="practice2">Let's print here</div>
+	<div id="practice3">Let's print here</div>
+	<div id="practice4">Let's print here</div>
+	<div id="practice5">Let's print here</div>
+
+</body>
+		<script type="text/javascript">
+			// for print the length of the string........
+		/*
+			var str = "Hi everyone, welcome here!";
+			var strlen = str.length;
+			alert(strlen);		
+  			document.getElementById("practice1").innerHTML= str +" And the nex is length of the variable "+ strlen;
+  	    */
+  		// for removing empty spaces from string....
+          /*
+  			var str = "  Hi everyone,    welcome here  !"
+			var strtrm = str.trim();		
+  			document.getElementById("practice2").innerHTML= strtrm;  
+		*/
+		//  replace() property.....
+		/*
+			var str = "Hi everyone, welcome here!";
+			var strrep = str.replace("everyone", "friends");		
+  			document.getElementById("practice3").innerHTML= strrep;  
+  		 */	
+  		 //  concatenate() property ........
+  		  /*
+  		    var str = "Hi everyone, welcome here!";
+			var strcont = str.concat(" friends...");		
+  			document.getElementById("practice4").innerHTML= strcont;  
+  		  */
+  		  // search() property.... tells that from where the desired index is starting on....
+  		  /*	
+  		    var str = "Hi everyone, welcome here!";
+			var strsr = str.search("everyone");		
+  			document.getElementById("practice5").innerHTML= strsr; 
+		 */
+
+  		  	// slice(), substring() and substr() ....... In slice() and substring() we will tells about start index and ending point index but one differ is subString never gets negative values...
+         
+  		  	var str = "Hi everyone , welcome here!";
+			var strslc = str.slice("2", "12");		
+  			document.getElementById("practice1").innerHTML= strslc;
+
+			//  for negative values.....
+			var str = "Hi everyone,welcome here!";
+			var strslcn = str.slice("-2", "-12");		
+  			document.getElementById("practice2").innerHTML= strslcn;
+
+// As we talk about that slice() and substring() are same....
+ 			var str = "Hi everyone , welcome here!";
+			var strstring = str.substring("2", "12");		
+  			document.getElementById("practice3").innerHTML= strstring;
+
+			var str = "Hi everyone , welcome here!";
+			var strsb = str.substr("2", "12");		
+  			document.getElementById("practice4").innerHTML= strsb;
+
+  				// search() property is used to find the exact index from where the word is started which we will enter in the search parenthesis. 
+
+		</script>
+
+</html>	
