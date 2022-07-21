@@ -1,0 +1,119 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS- JavaScript Summary Tutorial #02</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>We will practice about JavaScript Numbers in this tutorial</h1>
+	<p>Lets welcome to everyone who is here for visiting my source
+	you will be satisfied from me and enjoy it well.</p>
+
+	<!-- Main section starts from here -->
+	<div id="practice1">Let's print here</div>
+	<div id="practice2">Let's print here</div>
+	<div id="practice3">Let's print here</div>
+	<div id="practice4">Let's print here</div>
+	<div id="practice5">Let's print here</div>
+	<div id="practice6">Let's print here</div>
+	<div id="practice7">Let's print here</div>
+
+</body>
+		<script type="text/javascript">
+		/*
+			var num= 5;
+			document.getElementById('practice1').innerHTML= num;
+			
+			var num= 8.5;
+			document.getElementById('practice2').innerHTML= num;
+
+			var str= "Big Boss";
+			document.getElementById('practice3').innerHTML= str;
+			
+			var arr= ["Omar "," Imran"," sabir"];
+			document.getElementById('practice4').innerHTML= arr;
+			// object syntax format...
+			var person = {
+				name: "sabir", 
+				age: 50,
+				isEducated: true,
+				location: "Punjab",
+			};
+			document.getElementById('practice5').innerHTML= person.name +" and his age is  "+ person.age+" from "+ person.location;
+			
+			var undef= undefined;
+			document.getElementById('practice6').innerHTML= undef;
+
+			var cal= window.prompt("What is your name please type below?");
+			var getcal= " Welcome " + "<q>"+cal+"</q>" + " to our plateform!";
+			document.getElementById('practice7').innerHTML= getcal;
+*/
+// These are some basic info that variables in sring form can be "-","/","*" but can't be add because in strings they will be concatenate like 5+5=55....
+/*
+			var v = "5" - "5";
+			document.getElementById('practice1').innerHTML= v;
+			
+			var v = "5" / "5";
+			document.getElementById('practice2').innerHTML= v;
+			
+			var v = "5" * "5";
+			document.getElementById('practice3').innerHTML= v;
+
+	// two values concatenate like in excel ....		
+			var v = "5" + "5";
+			document.getElementById('practice4').innerHTML= v;
+*/
+// this is null value but not printing on the web browser...by alert() show alert.
+			/* var pose= null;
+			 document.getElementById('practice7').innerHTML= pose; */
+
+		/*	
+			var num= 25;
+			document.getElementById('practice1').innerHTML= typeof num;
+
+			var str= "Sabir";
+			document.getElementById('practice2').innerHTML= typeof str;
+
+			var arr = [51, 25, 5, 8];
+			document.getElementById('practice3').innerHTML= typeof arr;
+		
+			var nul = null;
+			document.getElementById('practice4').innerHTML= typeof nul;
+		
+			var undef = undefined;
+			document.getElementById('practice5').innerHTML= typeof undef;
+		*/
+
+		// Here is the details of Number method.........
+			var big = 25;
+			document.getElementById('practice1').innerHTML= Number.isInteger(big);
+			
+			var big = "Khan";
+			document.getElementById('practice2').innerHTML= Number.isInteger(big);
+			
+			var big = 25;
+			document.getElementById('practice3').innerHTML= isNaN(big);
+			
+			var smal = 25;
+			var big = smal.toString();
+		document.getElementById('practice4').innerHTML= big +" is a "+ typeof big;
+
+			var a = 2;
+			var b = 5.25;
+			var big = parseInt(a) + parseFloat(b);
+			document.getElementById('practice5').innerHTML= big;
+
+			// here when we calling the below function it shows a NaN message means "Not a Nummber"...... 
+			var big = "ball" * 5;
+			document.getElementById('practice6').innerHTML= big;
+			
+		// The below line is used for string concatenation..... 
+			var a = "He hit a ball very "
+			var b = "wisely and he is very good player.";
+			var big = a.concat(b);
+			document.getElementById('practice7').innerHTML= big;
+	
+
+		</script>
+</html>

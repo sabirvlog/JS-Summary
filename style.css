@@ -31,9 +31,9 @@ p{
 div {
 	color: floralwhite;
     background: blue;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
-    margin: 20px auto;
+    margin: 18px auto;
     padding: 10px;
     width: 80%;
 }
@@ -64,4 +64,7 @@ button:hover {
 #practice5 {
 	background: red;
 	color: white;
+}
+#practice7 {
+	background: blueviolet;
 }

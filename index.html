@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>We will practice about JavaScript Strings and Numbers in this tutorial</h1>
+	<h1>We will practice about JavaScript Strings in this tutorial</h1>
 	<p>Lets welcome to everyone who is here for visiting my source
 	you will be satisfied from me and enjoy it well.</p>
 
@@ -52,27 +53,59 @@
 		 */
 
   		  	// slice(), substring() and substr() ....... In slice() and substring() we will tells about start index and ending point index but one differ is subString never gets negative values...
-         
+       /*  
   		  	var str = "Hi everyone , welcome here!";
 			var strslc = str.slice("2", "12");		
   			document.getElementById("practice1").innerHTML= strslc;
 
-			//  for negative values.....
+			//  for negative values || check from right to left so greater to smaller value will be entered like first will be a starting index.....
+
 			var str = "Hi everyone,welcome here!";
-			var strslcn = str.slice("-2", "-12");		
+			var strslcn = str.slice("-13", "-1");		
   			document.getElementById("practice2").innerHTML= strslcn;
 
 // As we talk about that slice() and substring() are same....
+// for substring() property......
  			var str = "Hi everyone , welcome here!";
 			var strstring = str.substring("2", "12");		
   			document.getElementById("practice3").innerHTML= strstring;
 
+// for substr() property......
 			var str = "Hi everyone , welcome here!";
 			var strsb = str.substr("2", "12");		
   			document.getElementById("practice4").innerHTML= strsb;
-
+		*/
   				// search() property is used to find the exact index from where the word is started which we will enter in the search parenthesis. 
 
-		</script>
+  			// For .indexof() and lastindexof() properties......
+
+  			
+	// indexOf() and search() are same both of that...... 
+  			var str = "Hi everyone , welcome here friends welcome to all.";
+			var strpos = str.indexOf("welcome");		
+  			document.getElementById("practice1").innerHTML= strpos;
+
+  	//  for lastIndexof() property....
+			var str = "Hi everyone , welcome here friends welcome to all.";
+			var strpos = str.lastIndexOf("welcome");		
+  			document.getElementById("practice2").innerHTML= strpos;
+
+	// indexOf() and search() are same both of that...... 
+			var str = "Hi everyone , welcome here friends welcome to all.";
+			var strpos = str.search("welcome");		
+  			document.getElementById("practice3").innerHTML= strpos;
+
+  	// For multiple elements changing with replace() and index() property...
+  	// "g" means globally all elements will change..... 
+  	    	var str = "Hi everyone , welcome here friends welcome to all.";
+			var strpos = str.replace(/welcome/g,"greetings");		
+  			document.getElementById("practice4").innerHTML= strpos;
+
+ // we can also use replaceAll() property for changing all elements...  
+			var str = "Hi everyone , welcome here friends welcome to all.";
+			var strpos = str.replaceAll("welcome","greetings");		
+  			document.getElementById("practice5").innerHTML= strpos;
+
+ 		</script>
 
 </html>	
